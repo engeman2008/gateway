@@ -8,13 +8,13 @@ import com.netflix.loadbalancer.PingUrl;
 import org.springframework.context.annotation.Bean;
 
 public class RibbonConfiguration {
-    @Bean
-    public IPing ribbonPing(final IClientConfig config){
-        return new PingUrl(false, "/health");
-    }
-
-    @Bean
-    public IRule ribbonRule(final IClientConfig config){
-        return new AvailabilityFilteringRule();
-    }
+//    @Bean
+//    public IPing ribbonPing(final IClientConfig config){
+//        return new PingUrl(false, "/health");
+//    }
+//
+//    @Bean
+//    public IRule ribbonRule(final IClientConfig config){
+//        return new AvailabilityFilteringRule();
+//    }
 }
